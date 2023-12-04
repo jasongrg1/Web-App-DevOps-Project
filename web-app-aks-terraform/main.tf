@@ -19,7 +19,7 @@ module "networking" {
   source = "./networking-module"
 
   # Input variables for the networking module
-  resource_group_name = "networking-resource-group"
+  resource_group_name = "networking-resource-group-testing"
   location           = "UK South"
   vnet_address_space = ["10.0.0.0/16"]
   public_ip_address = var.public_ip_address
@@ -33,7 +33,7 @@ module "aks_cluster" {
   source = "./aks-cluster-module"
 
   # Input variables for the AKS cluster module
-  aks_cluster_name           = "terraform-aks-cluster"
+  aks_cluster_name           = "terraform-aks-cluster-testing"
   cluster_location           = "UK South"
   dns_prefix                 = "myaks-project"
   kubernetes_version         = "1.26.6"  # Adjust the version as needed
