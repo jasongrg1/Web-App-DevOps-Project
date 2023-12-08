@@ -22,6 +22,6 @@ steps:
     action: 'deploy'
     connectionType: 'azureResourceManager'
     azureSubscriptionConnection: 'Jason Gurung DevOps Project(89455ffe-8553-48ed-adcb-a5400a571079)'
-    azureResourceGroup: 'networking-resource-group'
+    azureResourceGroup: 'networking-rg'
     kubernetesCluster: 'terraform-aks-cluster'
     manifests: 'application-manifest.yaml'
